@@ -1,0 +1,524 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  padding: 0 1rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-geral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.img-header img {
+  width: 100px;
+  z-index: 1;
+}
+
+.menu-header a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu-header button {
+  display: none;
+}
+
+.menu-header ul {
+  display: flex;
+  gap: 1rem;
+  color: aliceblue;
+  font-weight: 500;
+}
+
+.menu-header ul > a:hover {
+  color: yellow;
+}
+
+.img-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.img-main-header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-mobile{
+  display: block;
+}
+
+.img-desktop{
+  display: none;
+}
+
+.btn-header {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  top: 460px;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-header button {
+  padding: 20px 40px;
+  background-color: #ffd700;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-header button:hover {
+  background-color: #1a1a1a;
+  color: aliceblue;
+}
+
+.review-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: aliceblue;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.review-title h1 {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.estrelas-review-content img {
+  width: 300px;
+}
+
+.review-content-bloco h2 {
+  margin: 1rem 0;
+  font-size: larger;
+  font: 500;
+  text-transform: uppercase;
+}
+
+.card-avaliacao {
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 1rem;
+  margin: 1.5rem 1rem;
+  padding: 2rem;
+}
+
+.card-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.info-usuario {
+  flex-grow: 1;
+  margin-left: 0.75rem;
+}
+
+.nome {
+  font-weight: bold;
+  margin: 0;
+}
+
+.data {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.logo-google {
+  width: 30px;
+  height: 30px;
+}
+
+.card-corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-corpo .estrelas {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+.verificado {
+  width: 18px;
+  height: 18px;
+}
+
+.mensagem {
+  margin-top: 0.5rem;
+  font-size: large;
+  font-weight: 400;
+}
+
+.servicos {
+  padding: 2rem 1rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.servicos-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.servicos-title h1 {
+  font-size: xx-large;
+  font-weight: 600;
+  color: aliceblue;
+  text-align: center;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-servico {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+}
+
+.card-servico .icone {
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.card-servico p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.sobre {
+  padding: 4rem 1rem;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-card {
+  background-color: #2a2a2a;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.sobre-logo img {
+  width: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.sobre-texto h2 {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.sobre-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.sobre-texto .endereco {
+  color: #ccc;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.sobre-slider {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.scrollable-slider {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.5rem;
+}
+
+.scrollable-slider img {
+  height: 320px;
+  border-radius: 12px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 700px;
+  object-fit: cover;
+}
+
+.contato {
+  padding: 2rem;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+}
+
+.contato-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contato-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato-info p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.contato-info h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.contato-mapa iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 12px;
+}
+.rodape {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  filter: brightness(1.2);
+}
+
+.footer-texto p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .nav-geral {
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    padding: 1rem 3rem;
+  }
+
+  .menu-header ul {
+    gap: 2rem;
+    font-size: 1.2rem;
+    display: row;
+    align-items: center;
+  }
+
+  .menu-header button {
+    display: block;
+    padding: 20px 40px;
+    background-color: #ffd700;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-header button:hover {
+    background-color: #1a1a1a;
+    color: aliceblue;
+  }
+
+  .btn-header {
+    display: none;
+  }
+
+  .img-mobile{
+    display: none;
+  }
+
+  .img-desktop{
+    display: flex;
+  }
+
+  .sobre-card {
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .sobre-logo img {
+    width: 150px;
+  }
+
+  .servicos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    text-align: left;
+  }
+
+  .footer-texto p {
+    font-size: 1rem;
+  }
+
+  .contato-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contato-info {
+    width: 45%;
+  }
+
+  .contato-mapa {
+    width: 50%;
+  }
+
+  .scrollable-slider img {
+    height: 200px;
+  }
+
+  .footer-container img {
+    width: 300px;
+  }
+}
